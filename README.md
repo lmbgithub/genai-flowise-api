@@ -1,9 +1,14 @@
-# genai-flowise-api — you cannot evaluate a router that will not tell you where it routed
+# genai-flowise-api
 
-A deployed multi-agent tutor (Flowise AgentFlow V2) with an LLM router in front
-of three specialists: conceptual, practical, and administrative. The obvious
-thing to do with it is send some questions and read the answers. That is not an
-evaluation, and this repository is about what is missing from it.
+An evaluation harness for a deployed multi-agent tutor built in Flowise
+(AgentFlow V2), where an LLM router sits in front of three specialists:
+conceptual, practical and administrative.
+
+Sending questions and reading the answers tells you little about a system like
+this, because it never shows which specialist handled a question. This project
+adds what is missing: routing accuracy measured against labelled cases, a
+keyword baseline to compare the router to, and adversarial questions that sit
+between two specialists.
 
 **Standard library only. 87 tests.**
 
